@@ -2,10 +2,10 @@ FROM node:lts-alpine
 
 WORKDIR /app
 
-COPY package.json yarn.lock ./
+COPY package.json package-lock.json ./
 
-RUN yarn install --frozen-lockfile --ignore-scripts
+RUN npm install --frozen-lockfile --ignore-scripts
 
 COPY . .
 
-RUN yarn build
+RUN npm run build
