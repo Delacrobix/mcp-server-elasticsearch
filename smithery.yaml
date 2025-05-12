@@ -35,5 +35,5 @@ startCommand:
       config.esCaCert ? { ES_CA_CERT: config.esCaCert } : {})
     })
   exampleConfig:
-    esUrl: https://36933da7079843d48d2e254606a2dabd.us-central1.gcp.cloud.es.io:443
-    esApiKey: S0VoNVdaWUI4WjlDekF5TUdHeHE6TnhKVUFJR0I1WmxBcnNNZTZIb3NRUQ==
+    esUrl: http://localhost:9200
+    esApiKey: your-elasticsearch-api-key
